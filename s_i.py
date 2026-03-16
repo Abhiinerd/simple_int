@@ -1,0 +1,12 @@
+principal = 203043
+rate = 9
+time = 5
+num_time_int = 2
+Simple_int = principal* rate* time/ 100
+Compound_int =  principal * (1 + rate/num_time_int) ** (num_time_int*time)
+Compound_Amount_Payable= Compound_int - principal
+Amount_payable= principal + Simple_int
+print("Simple Interest = ₹",Simple_int)
+print("Amount Payable =₹",Amount_payable)
+print("Compound Interest = ₹",Compound_int)
+print("Compound Amount Payable =₹",Compound_Amount_Payable)

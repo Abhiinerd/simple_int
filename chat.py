@@ -1,0 +1,12 @@
+from openai import OpenAI
+client = OpenAI ()
+user_prompt = input("Prompt:")
+system_prompt = "Limit your answer to paragraph."
+
+response = client.responses.create(
+    input= user_prompt,
+    instruction= system_prompt,
+    model= "gpt-5"
+)
+
+print(response.output_text)
